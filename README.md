@@ -1,1 +1,1 @@
-# JavascriiptOutPut
+# JavascriptOutPut
