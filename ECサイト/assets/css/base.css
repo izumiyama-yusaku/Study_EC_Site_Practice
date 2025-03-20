@@ -1,0 +1,146 @@
+
+body{
+    font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN",  "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    min-width: 1450px;
+    font-size: 15px;
+    line-height: 1.5;
+    color:#fff;
+    background-color: #e3f2fd;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+input[type="text"] {
+    /*color: #555555;*/
+    font-size: 16px;  
+    outline: none;
+}
+
+/*
+*headerのレイアウト
+*/
+.header{
+    position:fixed;
+    min-width: 1450px;
+    z-index:1000;
+    width: 100%;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 5px solid #90e0ef;
+    padding:10px;
+    background-color: #00b4d8;
+}
+.site-name {
+    width: auto;
+    margin:0px 10px;
+    display: block;
+    color:#fff;
+    text-decoration: none;
+    line-height: 1.0;
+    text-align: center;
+}
+.site-name:hover{
+    color:#d6d6d6;
+}
+.site-name:active{
+    color:#fff;
+}
+
+.site-name strong{
+    font-size: 24px;
+    letter-spacing: 0.2em;
+}
+.site-name span{
+    font-size: 18px;
+    letter-spacing: 0.2em;
+}
+
+.search{
+    display: flex;
+    width: 40%;
+    height: auto;
+    margin:5px 20px;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.search-text{
+    width: 100%;
+    padding:0px 15px;
+    border: none;
+    color: #333;
+}
+.search-button{
+    display: inline-block;
+    width: 40px;
+    outline: none;
+    border: none;
+    background-color: #2667ff;
+    transition: background-color .25s;
+}
+
+.search-button:hover{
+    background-color: rgba(38, 103, 255, 0.7);
+}
+.search-button:active {
+    background-color:  #0e2f7c;
+}
+
+.login-user{
+    width: auto;
+    padding: 5px;
+    color:#fff;
+    text-align: left;
+    text-decoration: none;
+} 
+
+.user-name {
+    font-size: 20px;
+}
+.honorific-title{
+    font-size: 15px;
+}
+
+.header-navlist{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.header-navtime{}*/
+.header-navtime > a{
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s; 
+}
+
+.header-navtime > a:hover{
+    border-bottom: 2px solid #ffffff; 
+}
+
+.sub-nav{
+    display: flex;
+    padding: 5px 20px;
+    font-size: 20px;
+    width: 100%;
+    background-color: #90e0ef;
+}
+
+.sub-nav strong{
+    padding-left:10px;
+    color: #333;
+}
+
+.sub-nav .point{
+    color: #2667ff;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZUMIYA -MARKET- | ポイント交換</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/images/IzumiyaMarketIcon.svg" />
+    <link rel="styleSheet" href="assets/css/sanitize.css" >
+    <link rel="styleSheet" href="assets/css/base.css">
+    <link rel="styleSheet" href="assets/css/pointExchange.css">
+</head>
+<body>
+  <header class="header">
+    <div class="main-nav">
+      <a href="#" class="site-name">
+        <strong>IZUMIYA</strong><br/>
+        <span>-MARKET-</span>
+      </a>
+      <form class="search">
+        <input  class="search-text" type="text" placeholder="未実装" >
+        <button class="search-button" type="submit" >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff">
+            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+          </svg>
+        </button>
+      </form>
+      <a href="#" class="login-user" id="js-login-user">
+        <span class="user-name" >匿名希望</span>
+        <span class="honorific-title" >さん</span><br/>
+      </a>
+      <nav class="header-nav">
+        <ul class="header-navlist">
+            <li class="header-navtime">
+              <a href="#">カート</a>
+            </li>
+            <li class="header-navtime">
+              <a href="#">お気に入り</a>
+            </li>
+            <li class="header-navtime">
+              <a href="#">閲覧履歴</a>
+            </li>
+            <li class="header-navtime">
+              <a href="#">購入履歴</a>
+            </li>
+            <li class="header-navtime">
+              <a href="#">お知らせ</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+    <div class="sub-nav">
+        <span>ZumiPoint:</span>
+        <strong id="js-user-point-header">5000</strong>
+        <span class="point">pt</span>
+    </div>
+  </header>
+
+  <div class="campaign-carousel">
+  </div>
+  
+  <main>
+    <h1 class="product-header">あなたにオススメの商品！！</h1>
+    <section class="product">
+      <ul class="product-list">
+        <li class="product-item">
+          <article class="product-card">
+            <a href="javascript:void(0);" class="product-link">
+              <img class="product-img" src="assets/images/DSC_0240.jpg" alt="商品の説明">
+              <span class="product-evaluation">★★★★☆</span>
+              <b class="product-name">コンピュータシステムの理論と実装 モダンなコンピュータの作りかた</b>
+              <div class="seller">Noam Nisan(著)  Shimon Schocken(著)  斎藤 康毅 (翻訳)</div>
+              <div class="category">本</div>
+              <div class="message" id="js-message-0001"></div>
+            </a>
+            <div class="product-counter">
+              <div class="point-view">
+                <b class="product-point" id="js-sun-point-0001"></b>
+                <span class="point-unit">pt</span>
+              </div>
+              <div class="button-view">
+                <button type="button" class="counter-button" id="js-decrement-0001" aria-label="数を減らす">-</button>
+                <div class="counter-number" id="js-counter-0001">0</div>
+                <button type="button" class="counter-button" id="js-increment-0001" aria-label="数を増やす">+</button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="product-item">
+          <article class="product-card">
+            <a href="javascript:void(0);" class="product-link">
+              <img class="product-img" src="assets/images/DSC_0243.jpg" alt="商品の説明">
+              <span class="product-evaluation">★★★★☆</span>
+              <b class="product-name">なぜ、あなたはJavaでオブジェクト指向開発ができないのか javaの型を克服する実践トレーニング</b>
+              <div class="seller">小森祐介</div>
+              <div class="category">本</div>
+              <div class="message" id="js-message-0002"></div>
+            </a>
+            <div class="product-counter">
+              <div class="point-view">
+                <b class="product-point" id="js-sun-point-0002"></b>
+                <span class="point-unit">pt</span>
+              </div>
+              <div class="button-view">
+                <button type="button" class="counter-button" id="js-decrement-0002" aria-label="数を減らす">-</button>
+                <div class="counter-number" id="js-counter-0002">0</div>
+                <button type="button" class="counter-button" id="js-increment-0002" aria-label="数を増やす">+</button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="product-item">
+          <article class="product-card">
+            <a href="javascript:void(0);" class="product-link">
+              <img class="product-img" src="assets/images/DSC_0239.jpg" alt="商品の説明">
+              <span class="product-evaluation">★★★★☆</span>
+              <b class="product-name">プラトン全集8</b>
+              <div class="seller">プラトン</div>
+              <div class="category">本</div>
+              <div class="message" id="js-message-0003"></div>
+            </a>
+            <div class="product-counter">
+              <div class="point-view">
+                <b class="product-point" id="js-sun-point-0003"></b>
+                <span class="point-unit">pt</span>
+              </div>
+              <div class="button-view">
+                <button type="button" class="counter-button" id="js-decrement-0003" aria-label="数を減らす">-</button>
+                <div class="counter-number" id="js-counter-0003">0</div>
+                <button type="button" class="counter-button" id="js-increment-0003" aria-label="数を増やす">+</button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="product-item">
+          <article class="product-card">
+            <a href="javascript:void(0);" class="product-link">
+              <img class="product-img" src="assets/images/DSC_0245.jpg" alt="商品の説明">
+              <span class="product-evaluation">★☆☆☆☆</span>
+              <b class="product-name">ラズパイ</b>
+              <div class="seller">○○会社アルゴリズミヤマ</div>
+              <div class="category">コンピュータ</div>
+              <div class="message" id="js-message-0004"></div>
+            </a>
+            <div class="product-counter">
+              <div class="point-view">
+                <b class="product-point" id="js-sun-point-0004"></b>
+                <span class="point-unit">pt</span>
+              </div>
+              <div class="button-view">
+                <button type="button" class="counter-button" id="js-decrement-0004" aria-label="数を減らす">-</button>
+                <div class="counter-number" id="js-counter-0004">0</div>
+                <button type="button" class="counter-button" id="js-increment-0004" aria-label="数を増やす">+</button>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <div class="space">
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <b class="point-info">ZumiPoint:</b>
+      <div class="footer-point-view">
+        <b class="user-point" id="js-user-point">5000</b>
+        <span class="user-point-unit">pt</span>
+      </div>
+      <b class="point-info">合計ポイント:</b>
+      <div class="footer-point-view">
+        <b class="total-point" id="js-total-point">0</b>
+        <span class="total-point-unit">pt</span>
+      </div>
+      <button class="exchange-button" id="js-exchange-button">交換する</button>
+    </div>
+  </footer>
+
+  
+  <script type="module" src="assets/js/main.js"></script>
+
+</body>
+</html>
